@@ -1,7 +1,7 @@
 #include <iostream>
 #include "board.hpp"
 
-std::string Board::place(int column, char player)
+bool Board::place(int column, char player)
 {
     int y=Board::m_y;
     while(y>=0)
@@ -9,14 +9,14 @@ std::string Board::place(int column, char player)
         if(Board::field[y][column] == 'X')
         {
             Board::field[y][column] = player;
-            return "valid move";
+            return 1; //valid move
         }
         else
         {
             y--;
         }
     }
-    return  "invalid move";
+    return 0;  //invalid move
 }
 void Board::display()
 {

@@ -17,7 +17,7 @@ public:
             }
         }
     }
-    std::string place(int column, char player);
+    bool place(int column, char player);
     void display();
     bool check_winner(char player);
     int getsize();
