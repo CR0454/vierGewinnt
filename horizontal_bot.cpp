@@ -4,7 +4,7 @@
 
 #include "horizontal_bot.hpp"
 
-HorizontalBot::HorizontalBot(char name) : Player(name), currentChoice(1) {}
+HorizontalBot::HorizontalBot(char name, int columns) : Player(name, columns), currentChoice(1) {}
 
 int HorizontalBot::decide() {
     int result = currentChoice;
