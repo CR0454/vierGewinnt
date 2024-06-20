@@ -5,9 +5,9 @@
 #include "human.hpp"
 #include <iostream>
 
-Human::Human(char name) : Player(name) {}
+Human::Human(char name, int columns) : PLAYER(name, columns) {}
 
-int Human::choice() {
+int Human::decide() {
     int num;
     std::cout << "Reihe: ";
     std::cin >> num;
