@@ -7,11 +7,11 @@
 
 #include "player.hpp"
 
-class Human : public Player {
+class Human : public PLAYER {
 public:
     Human(char name);
 
-    int choice() override;
+    int decide() override;
 };
 
 #endif // HUMAN_HPP
