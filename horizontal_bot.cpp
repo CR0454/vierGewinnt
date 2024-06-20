@@ -6,7 +6,7 @@
 
 HorizontalBot::HorizontalBot(char name) : Player(name), currentChoice(1) {}
 
-int HorizontalBot::choice() {
+int HorizontalBot::decide() {
     int result = currentChoice;
     currentChoice = (currentChoice % 7) + 1;
     return result;
