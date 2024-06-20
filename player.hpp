@@ -1,3 +1,5 @@
+#include <iostream>
+
 
 #ifndef PLAYER
 
@@ -5,7 +7,7 @@ class PLAYER {
     
     public:
         PLAYER(char x, int columns_in): 
-            id(x),
+            name(x),
             columns(columns_in)
             {}
         virtual ~PLAYER(){};
@@ -15,7 +17,7 @@ class PLAYER {
         virtual int const decide();
 
     protected:
-        char const id;
+        char const name;
         int const columns;
 };
 
