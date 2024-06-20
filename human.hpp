@@ -9,7 +9,7 @@
 
 class Human : public PLAYER {
 public:
-    Human(char name);
+    Human(char name, int columns);
 
     int decide() override;
 };
