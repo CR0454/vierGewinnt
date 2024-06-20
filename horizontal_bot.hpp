@@ -11,7 +11,7 @@ class HorizontalBot : public PLAYER {
 private:
     int currentChoice;
 public:
-    HorizontalBot(char name);
+    HorizontalBot(char name, int columns);
 
     int decide() override;
 };
