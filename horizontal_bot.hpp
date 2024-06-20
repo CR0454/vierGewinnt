@@ -7,13 +7,13 @@
 
 #include "player.hpp"
 
-class HorizontalBot : public Player {
+class HorizontalBot : public PLAYER {
 private:
     int currentChoice;
 public:
     HorizontalBot(char name);
 
-    int choice() override;
+    int decide() override;
 };
 
 #endif // HORIZONTAL_BOT_HPP
