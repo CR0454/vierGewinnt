@@ -1,7 +1,8 @@
 #include <iostream>
 
 
-#ifndef PLAYER
+#ifndef PLAYER_HPP
+#define PLAYER_HPP
 
 class PLAYER {
     
@@ -10,7 +11,8 @@ class PLAYER {
             name(x),
             columns(columns_in)
             {}
-        virtual ~PLAYER(){};
+
+            virtual ~PLAYER() {}
 
         char const getName();
 
@@ -21,4 +23,4 @@ class PLAYER {
         int const columns;
 };
 
-#endif //end of definition PLAYER
+#endif //end of definition PLAYER_HPP

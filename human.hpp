@@ -9,9 +9,9 @@
 
 class Human : public PLAYER {
 public:
-    Human(char name, int columns);
+    Human(char name, int columns): PLAYER(name, columns){}
 
-    int decide() override;
+    int const decide() override;
 };
 
 #endif // HUMAN_HPP

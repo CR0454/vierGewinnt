@@ -8,12 +8,12 @@
 #include "player.hpp"
 
 class HorizontalBot : public PLAYER {
-private:
-    int currentChoice;
-public:
-    HorizontalBot(char name, int columns);
+    private:
+        int currentChoice;
+    public:
+        HorizontalBot(char name, int columns): PLAYER(name, columns), currentChoice(1) {}
 
-    int decide() override;
+        int const decide() override;
 };
 
 #endif // HORIZONTAL_BOT_HPP

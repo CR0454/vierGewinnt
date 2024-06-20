@@ -3,13 +3,10 @@
 //
 
 #include "human.hpp"
-#include <iostream>
 
-Human::Human(char name, int columns) : PLAYER(name, columns) {}
-
-int Human::decide() {
+int const Human::decide() {
     int num;
-    std::cout << "Reihe: ";
+    std::cout << "Reihe:";
     std::cin >> num;
-    return num;
+    return num-1;
 }

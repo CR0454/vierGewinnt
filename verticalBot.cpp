@@ -2,13 +2,9 @@
 
 int const VERTICALBOT::decide() {
     if (rowsPlayed >= rows) {
-        if(column+1 > columns) {
-            column = 0;
-        }
-        else {
-            column += 1;
-        }
+        rowsPlayed = 0;
+        column = (column+1) % columns;
     }
-
+    rowsPlayed += 1;
     return column;
 }

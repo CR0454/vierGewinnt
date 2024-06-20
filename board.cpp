@@ -6,7 +6,7 @@ bool Board::place(int column, char player)
     int y=Board::m_y;
     while(y>=0)
     {
-        if(Board::field[y][column] == 'X')
+        if(Board::field[y][column] == '.')
         {
             Board::field[y][column] = player;
             return 1; //valid move
@@ -25,7 +25,7 @@ void Board::display()
             std::cout<< field[i][j];}
             std::cout << std::endl;
 
-}
+    }
 }
 bool Board::check_winner(char player)
 {

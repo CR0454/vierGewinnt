@@ -6,7 +6,8 @@ class VERTICALBOT: public PLAYER
     public:
         VERTICALBOT(char x, int columns_in, int rows_in):
             PLAYER(x, columns_in),
-            rows(rows_in)
+            rows(rows_in),
+            rowsPlayed(0)
             {
                 //random number generator
                 std::random_device device;
