@@ -6,7 +6,7 @@ bool Board::place(int column, char player)
     int y=Board::m_y;
     while(y>=0)
     {
-        if(Board::field[y][column] == '.')
+        if(Board::field[y][column] == '-')
         {
             Board::field[y][column] = player;
             return 1; //valid move

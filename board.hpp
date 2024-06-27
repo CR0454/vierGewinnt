@@ -13,7 +13,7 @@ public:
         {
             for (int j = 0; j < m_x; j++)
             {
-                field[i][j] = '.';
+                field[i][j] = '-';
             }
         }
     }

@@ -100,6 +100,8 @@ int main() {
 
     }while(!(board.check_winner(player1 -> getName()) || board.check_winner(player2 -> getName())));
 
+    board.display();
+
     if(board.check_winner(player1 -> getName())) {
         std::cout << "Congratulations Player 1, you won!";
     }
